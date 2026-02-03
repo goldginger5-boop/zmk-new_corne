@@ -145,7 +145,7 @@
             tapping-term-ms = <200>;
         };
 */
-
+/*
         TD_L1: TD_L1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_L1";
@@ -169,7 +169,7 @@
             tapping-term-ms = <200>;
             bindings = <&hold_mo 3>, <&tap_tog 3>;
         };
-
+*/
         hold_mo: hold_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MO";
