@@ -341,3 +341,5 @@ combos:
   k: {t: '=', s: +}
 - p: [44, 45]
   k: {t: QWERTY, h: toggle}
+- p: [12, 41, 0, 28]
+  k: '&soft_off'
