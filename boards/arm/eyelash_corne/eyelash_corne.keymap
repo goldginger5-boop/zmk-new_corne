@@ -6,19 +6,176 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    behaviors {
-        td0: td0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+    combos {
+        compatible = "zmk,combos";
+
+        L_Parenthesis {
+            bindings = <&kp LS(NUMBER_9)>;
+            key-positions = <4 3>;
+        };
+
+        L_Brace {
+            bindings = <&kp LS(LEFT_BRACKET)>;
+            key-positions = <4 3 2>;
+        };
+
+        L_Bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <4 3 2 1>;
+        };
+
+        R_Parenthesis {
+            bindings = <&kp LS(NUMBER_0)>;
+            key-positions = <7 8>;
+        };
+
+        R_Brace {
+            bindings = <&kp LS(RIGHT_BRACKET)>;
+            key-positions = <7 8 9>;
+        };
+
+        R_Bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8 9 10>;
+        };
+
+        Space {
+            bindings = <&kp SPACE>;
+            key-positions = <16 15>;
+        };
+
+        Tab {
+            bindings = <&kp TAB>;
+            key-positions = <16 15 14>;
+        };
+
+        Escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <16 15 13 14>;
+        };
+
+        BackSpace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <19 20>;
+        };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <19 20 21>;
+        };
+
+        Enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21 22>;
+        };
+
+        Equal-0 {
+            bindings = <&kp EQUAL>;
+            key-positions = <28 27>;
+        };
+
+        Backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <28 27 26>;
+        };
+
+        Grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <28 27 26 25>;
+        };
+
+        Plus-0 {
+            bindings = <&kp LS(EQUAL)>;
+            key-positions = <31 32>;
+        };
+
+        Pipe {
+            bindings = <&kp LS(BACKSLASH)>;
+            key-positions = <31 32 33>;
+        };
+
+        Tilde {
+            bindings = <&kp LS(GRAVE)>;
+            key-positions = <31 32 33 34>;
+        };
+
+        Underscore {
+            bindings = <&kp LS(MINUS)>;
+            key-positions = <16 37>;
+        };
+
+        Minus {
+            bindings = <&kp MINUS>;
+            key-positions = <28 37>;
+        };
+
+        Plus-1 {
+            bindings = <&kp LS(EQUAL)>;
+            key-positions = <19 40>;
+        };
+
+        Equal-1 {
+            bindings = <&kp EQUAL>;
+            key-positions = <31 40>;
+        };
+
+        TO0 {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
         };
     };
 
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    behaviors {
+        mo_tag: mo_tag {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MO_TAG";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        TD_L1: TD_L1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L1";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hold_mo 1>, <&tap_tog 1>;
+        };
+
+        TD_L2: TD_L2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L2";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hold_mo 2>, <&tap_tog 2>;
+        };
+
+        TD_L3: TD_L3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L3";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&hold_mo 3>, <&tap_tog 3>;
+        };
+
+        hold_mo: hold_mo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MO";
+            bindings = <&mo>;
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
+
+        tap_tog: tap_tog {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_TOG";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            bindings = <&tog>;
+        };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
