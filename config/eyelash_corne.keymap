@@ -213,6 +213,7 @@
         tap-ms = <100>;
     };
 
+/*
     combos {
         compatible = "zmk,combos";
 
@@ -221,6 +222,7 @@
             key-positions = <1 15 29>;
         };
     };
+*/
 
     keymap {
         compatible = "zmk,keymap";
