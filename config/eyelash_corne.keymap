@@ -186,6 +186,7 @@
         };
         */
 
+        /*
         tap_tog: tap_tog {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_TOG";
@@ -193,6 +194,7 @@
             tapping-term-ms = <200>;
             bindings = <&tog>;
         };
+        */
 
     };
 
