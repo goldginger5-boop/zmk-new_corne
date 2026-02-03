@@ -133,6 +133,11 @@
             key-positions = <44 45>;
         };
 
+        SoftOff {
+            bindings = <&soft_off>;
+            key-positions = <12 41 0 28>;
+        };
+
         /*
         softoff {
             bindings = <&soft_off>;
