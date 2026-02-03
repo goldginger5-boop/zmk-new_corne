@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: NUMBER}
   - Q
   - W
   - E
@@ -13,8 +13,8 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - '&td0'
+  - {t: '$$mdi:backspace$$', h: NUMBER}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -29,9 +29,9 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
+  - $$mdi:apple-keyboard-shift$$
+  - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: X, h: LEFT WIN}
   - C
   - V
   - B
@@ -41,16 +41,16 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '-', s: _}
-  - LGUI
+  - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - NUMBER
-  - {t: '$$mdi:keyboard-space$$', h: Fn}
-  - {t: '$$mdi:keyboard-return$$', h: Fn}
-  - SYMBOL
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:keyboard-space$$
+  - RETURN
+  - SYMBOL
+  - Fn
   NUMBER:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -62,7 +62,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - BT CLR ALL
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
@@ -92,8 +92,8 @@ layers:
   - RGB BRD
   - END
   - PG DN
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - INS
   - $$mdi:backspace-reverse-outline$$
@@ -192,10 +192,10 @@ layers:
   - PAUSE BREAK
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   '4':
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -295,5 +295,49 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
+- p: [4, 3]
+  k: Sft+9
+- p: [4, 3, 2]
+  k: Sft+[
+- p: [4, 3, 2, 1]
+  k: {t: '[', s: '{'}
+- p: [8, 9]
+  k: Sft+0
+- p: [8, 9, 10]
+  k: Sft+]
+- p: [8, 9, 10, 11]
+  k: {t: ']', s: '}'}
+- p: [16, 17]
+  k: $$mdi:keyboard-space$$
+- p: [16, 15, 17]
+  k: $$mdi:keyboard-tab$$
+- p: [16, 15, 14, 17]
+  k: $$mdi:keyboard-esc$$
+- p: [23, 24]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [23, 24, 25]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [23, 24, 25, 26]
+  k: {t: '$$mdi:keyboard-return$$', type: enter}
+- p: [32, 31]
+  k: {t: '=', s: +}
+- p: [32, 31, 30]
+  k: {t: \, s: '|'}
+- p: [29, 30, 31, 32]
+  k: {t: '`', s: '~'}
+- p: [37, 38]
+  k: Sft+=
+- p: [37, 38, 39]
+  k: Sft+\
+- p: [37, 38, 39, 40]
+  k: Sft+`
+- p: [17, 43]
+  k: Sft+-
+- p: [43, 32]
+  k: {t: '-', s: _}
+- p: [46, 23]
+  k: Sft+=
+- p: [46, 37]
+  k: {t: '=', s: +}
+- p: [44, 45]
+  k: {t: QWERTY, h: toggle}
