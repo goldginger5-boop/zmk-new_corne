@@ -132,6 +132,12 @@
             bindings = <&to 0>;
             key-positions = <44 45>;
         };
+
+        softoff {
+            bindings = <&soft_off>;
+            key-positions = <1 15 29>;
+        };
+
     };
 
     behaviors {
@@ -170,7 +176,7 @@
             bindings = <&hold_mo 3>, <&tap_tog 3>;
         };
 */
-        
+        /*
         hold_mo: hold_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MO";
@@ -178,6 +184,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+        */
 
         tap_tog: tap_tog {
             compatible = "zmk,behavior-hold-tap";
