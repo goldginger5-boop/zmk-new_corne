@@ -170,7 +170,7 @@
             bindings = <&hold_mo 3>, <&tap_tog 3>;
         };
 */
-        /*
+        
         hold_mo: hold_mo {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_MO";
@@ -186,7 +186,7 @@
             tapping-term-ms = <200>;
             bindings = <&tog>;
         };
-*/
+
     };
 
     scroll_encoder: scroll_encoder {
