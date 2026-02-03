@@ -14,20 +14,6 @@
 
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
-&msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
-};
-
-&soft_off { hold-time-ms = <2000>; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -149,7 +135,7 @@
     };
 
     behaviors {
-/*
+        /*
         mo_tag: mo_tag {
             compatible = "zmk,behavior-hold-tap";
             label = "MO_TAG";
@@ -215,7 +201,7 @@
         tap-ms = <100>;
     };
 
-/*
+    /*
     combos {
         compatible = "zmk,combos";
 
