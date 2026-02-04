@@ -96,7 +96,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Controll, h: toggle}
+  - {t: Controll, h: Controll}
   - {t: QWERTY, h: toggle}
   NUMBER:
   - $$mdi:keyboard-tab$$
@@ -197,7 +197,7 @@ layers:
   - {t: QWERTY, h: toggle}
   - {t: FUNCTION, h: toggle, type: held}
   Controll:
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', type: held}
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
@@ -209,7 +209,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: held}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
@@ -239,14 +239,14 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Device, h: toggle}
+  - {t: Device, h: Device, type: held}
   - {t: QWERTY, h: toggle}
   Device:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
@@ -258,7 +258,7 @@ layers:
   - RGB HUI
   - RGB SAI
   - RGB SPI
-  - RGB TOG
+  - {t: RGB TOG, type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -288,11 +288,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: QWERTY, h: toggle}
+  - {t: QWERTY, h: toggle, type: held}
   - {t: QWERTY, h: toggle}
 combos:
 - p: [4, 3]
