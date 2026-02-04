@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
-  - SYMBOOL
+  - {t: SYMBOOL, h: SYMBOOL}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - RETURN
-  - NUMBER
-  - FUNCTION
+  - {t: NUMBER, h: NUMBER}
+  - {t: FUNCTION, h: FUNCTION}
   SYMBOOL:
   - {t: '$$mdi:keyboard-esc$$', type: held}
   - {t: '1', s: '!'}
