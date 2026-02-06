@@ -251,7 +251,7 @@
         email_01: email_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp>;
+            bindings = <&kp M &kp A &kp S &kp A &kp Y &kp K &kp I &kp DOT &kp S &kp H &kp I &kp M &kp I &kp Z &kp U &kp LS(NUMBER_2) &kp R &kp I &kp N &kp G &kp J &kp I &kp N &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL_01";
         };
     };
