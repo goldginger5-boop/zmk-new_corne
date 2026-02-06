@@ -343,3 +343,7 @@ combos:
   k: {t: QWERTY, h: toggle}
 - p: [12, 41, 0, 28]
   k: '&soft_off'
+- p: [4, 8]
+  k: '&email_00'
+- p: [3, 9]
+  k: {t: '$$mdi:minus-circle-outline$$', type: none}
