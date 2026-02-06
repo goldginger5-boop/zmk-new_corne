@@ -263,7 +263,7 @@
 &kp TAB           &kp PG_UP  &kp UP    &kp HOME   &none       &kp KP_PLUS                              &mmv MOVE_UP                     &kp KP_PLUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp BSPC
 &kp LEFT_CONTROL  &kp LEFT   &kp DOWN  &kp RIGHT  &mkp RCLK   &kp KP_MINUS             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp COMMA    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH     &kp ESCAPE
 &kp LSHIFT        &kp PG_DN  &none     &kp END    &kp DELETE  &kp BACKSPACE  &trans                    &mmv MOVE_DOWN                   &kp KP_DOT   &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL     &kp KP_ENTER
-                                       &to 0      &kp LALT    &kp SPACE                                                                 &kp RET      &tog 2           &kp KP_NUMBER_0
+                                       &to 0      &kp LALT    &kp SPACE                                                                 &kp RET      &tog 4           &kp KP_NUMBER_0
             >;
 
             sensor-bindings = <&scroll_encoder>;
