@@ -144,7 +144,7 @@
         };
 
         email_01 {
-            bindings = <&none>;
+            bindings = <&email_01>;
             key-positions = <3 9>;
         };
 
