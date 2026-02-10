@@ -217,7 +217,7 @@ path.combo {
 
 svg.keymap {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
 }
