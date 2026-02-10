@@ -3,7 +3,7 @@ draw_config:
   draw_key_sides: true
   key_w: 60.0
   key_h: 56.0
-  split_gap: 30.0
+  split_gap: 60.0
   combo_w: 28.0
   combo_h: 26.0
   key_rx: 6.0
@@ -21,7 +21,7 @@ draw_config:
 
     svg.keymap {
       font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
-      font-size: 12px;
+      font-size: 10px;
       font-weight: bold;
       text-rendering: optimizeLegibility;
     }
@@ -525,7 +525,7 @@ parse_config:
     combo_to_2:
       align: top
     combo_to_3:
-      align: top
+      align: bottom
     combo_bt_clear:
       align: top
       offset: 0.03
