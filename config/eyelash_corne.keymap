@@ -158,14 +158,19 @@
             key-positions = <16 24>;
         };
 
-        Bracket {
+        Bracket_sub2 {
             bindings = <&bracket>;
             key-positions = <14 26>;
         };
 
-        Bracket_sub {
+        Bracket_sub1 {
             bindings = <&bracket>;
             key-positions = <15 25>;
+        };
+
+        Bracket {
+            bindings = <&bracket>;
+            key-positions = <17 16 23 24>;
         };
 
         /*
