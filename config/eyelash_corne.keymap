@@ -138,14 +138,34 @@
             key-positions = <12 41 0 28>;
         };
 
-        email_00 {
+        Email_00 {
             bindings = <&email_00>;
             key-positions = <4 8>;
         };
 
-        email_01 {
+        Email_01 {
             bindings = <&email_01>;
             key-positions = <3 9>;
+        };
+
+        Parenthesis {
+            bindings = <&parenthesis>;
+            key-positions = <17 23>;
+        };
+
+        Brace {
+            bindings = <&brace>;
+            key-positions = <16 24>;
+        };
+
+        Bracket {
+            bindings = <&bracket>;
+            key-positions = <14 26>;
+        };
+
+        Bracket_sub {
+            bindings = <&bracket>;
+            key-positions = <15 25>;
         };
 
         /*
@@ -252,6 +272,27 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp A &kp S &kp A &kp Y &kp U &kp K &kp I &kp DOT &kp S &kp H &kp I &kp M &kp I &kp Z &kp U &kp LS(NUMBER_2) &kp R &kp I &kp N &kp G &kp J &kp I &kp N &kp DOT &kp C &kp O &kp M>;
             label = "EMAIL_01";
+        };
+
+        parenthesis: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N9) &kp LS(N0) &kp LEFT>;
+            label = "NEW_MACRO";
+        };
+
+        brace: new_macro1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LEFT>;
+            label = "NEW_MACRO1";
+        };
+
+        bracket: new_macro2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
+            label = "NEW_MACRO2";
         };
     };
 
