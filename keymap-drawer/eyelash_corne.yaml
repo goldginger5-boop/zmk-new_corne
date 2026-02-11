@@ -355,3 +355,5 @@ combos:
   k: '&bracket'
 - p: [15, 25]
   k: '&bracket'
+- p: [17, 16, 23, 24]
+  k: '&bracket'
