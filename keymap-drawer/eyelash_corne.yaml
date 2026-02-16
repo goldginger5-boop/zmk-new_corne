@@ -96,7 +96,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: Controll, h: toggle}
+  - {t: Control, h: toggle}
   - {t: QWERTY, h: toggle}
   NUMBER:
   - $$mdi:keyboard-tab$$
@@ -196,7 +196,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: QWERTY, h: toggle}
   - {t: FUNCTION, h: toggle, type: held}
-  Controll:
+  Control:
   - $$mdi:keyboard-tab$$
   - '&mkp MB1'
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
