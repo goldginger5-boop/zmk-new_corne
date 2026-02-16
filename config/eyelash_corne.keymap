@@ -352,22 +352,26 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        Control_layer {
+        control_layer {
             bindings = <
 &kp TAB           &mkp MB1        &mmv MOVE_UP    &mkp MB2         &msc SCRL_UP    &none                      &none         &none      &none  &none     &none     &none      &kp BACKSPACE
 &kp LEFT_CONTROL  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &none               &none  &none  &none  &none      &none  &none     &kp UP    &none      &kp ESCAPE
 &kp LSHIFT        &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &none           &none      &none           &none         &none      &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp ENTER
                                                   &none            &kp LALT        &kp SPACE                                &kp ENTER  &to 5  &to 0
             >;
+
+            label = "CONTROL";
         };
 
-        Device_layer {
+        device_layer {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &rgb_ug RGB_TOG                  &none         &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_TOG
 &none  &none         &none         &none         &none         &none                     &none  &none  &none  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &none
 &none  &out OUT_USB  &out OUT_BLE  &none         &none         &none            &none           &none         &none            &none            &none            &none            &none            &bt BT_CLR_ALL
                                    &none         &none         &none                                          &none            &to 0            &to 0
             >;
+
+            label = "DEVICE";
         };
     };
 };
