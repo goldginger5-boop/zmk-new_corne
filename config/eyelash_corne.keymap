@@ -319,10 +319,10 @@
         symbol_layer {
             display-name = "SYMBOOL";
             bindings = <
-&kp ESCAPE        &kp N1     &kp N2         &kp N3      &kp N4      &kp N5                                       &mmv MOVE_UP                     &kp N6            &kp N7             &kp N8                &kp N9                 &kp N0         &kp DELETE
-&kp LEFT_CONTROL  &kp LS(A)  &kp LS(EQUAL)  &kp LS(N9)  &kp LS(N0)  &none                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp ENTER      &kp ESCAPE
-&kp LSHIFT        &kp MINUS  &kp EQUAL      &none       &kp DELETE  &kp BACKSPACE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH  &kp LS(BACKSLASH)
-                                            &tog 1      &kp LALT    &kp SPACE                                                                     &kp ENTER         &to 4              &to 0
+&kp ESCAPE        &kp N1         &kp N2         &kp N3      &kp N4      &kp N5                                       &mmv MOVE_UP                     &kp N6            &kp N7             &kp N8                &kp N9                 &kp N0         &kp DELETE
+&kp LEFT_CONTROL  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(N9)  &kp LS(N0)  &none                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp ENTER      &kp ESCAPE
+&kp LSHIFT        &kp MINUS      &kp EQUAL      &none       &kp DELETE  &kp BACKSPACE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH  &kp LS(BACKSLASH)
+                                                &tog 1      &kp LALT    &kp SPACE                                                                     &kp ENTER         &to 4              &to 0
             >;
 
             sensor-bindings = <&scroll_encoder>;
