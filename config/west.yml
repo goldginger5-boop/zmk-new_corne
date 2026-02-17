@@ -6,8 +6,8 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
-    - name: caksoylar # Add battery LED.
-      url-base: https://github.com/caksoylar
+    #MS-Battry - name: caksoylar # Add battery LED.
+    #MS-Battry   url-base: https://github.com/caksoylar
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
@@ -16,8 +16,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
+    #MS-Battry - name: zmk-rgbled-widget
+    #MS-Battry   remote: caksoylar
+    #MS-Battry   revision: main
   self:
     path: config
