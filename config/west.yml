@@ -2,8 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar // Add battery LED.
-      url-base: https://github.com/caksoylar/zmk-rgbled-widget.git
+    - name: caksoylar # Add battery LED.
+      url-base: https://github.com/caksoylar
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
