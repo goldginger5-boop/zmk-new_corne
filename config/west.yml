@@ -2,12 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: caksoylar # Add battery LED.
-      url-base: https://github.com/caksoylar
       # Additional modules containing boards/shields/custom code can be listed here as well.
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: caksoylar # Add battery LED.
+      url-base: https://github.com/caksoylar
   projects:
     - name: eyelash_corne
       url: https://github.com/a741725193/zmk-new_corne
