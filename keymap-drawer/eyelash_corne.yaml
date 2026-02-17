@@ -290,8 +290,8 @@ layers:
   - BT CLR ALL
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&ind_bat'
+  - '&ind_bat'
   - {t: QWERTY, h: toggle}
   - {t: QWERTY, h: toggle}
 combos:
