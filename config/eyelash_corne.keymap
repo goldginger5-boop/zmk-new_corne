@@ -312,25 +312,25 @@
             label = "EMAIL_01";
         };
 
-        parenthesis: new_macro {
+        parenthesis: parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(N9) &kp LS(N0) &kp LEFT>;
-            label = "NEW_MACRO";
+            label = "PARENTHESIS";
         };
 
-        brace: new_macro1 {
+        brace: brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LEFT>;
-            label = "NEW_MACRO1";
+            label = "BRACE";
         };
 
-        bracket: new_macro2 {
+        bracket: bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
-            label = "NEW_MACRO2";
+            label = "BRACKET";
         };
     };
 
