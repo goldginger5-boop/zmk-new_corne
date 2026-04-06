@@ -291,6 +291,8 @@
             bindings = <&kp RBKT>, <&kp RBRC>;
         };
 
+    };
+
     /*
     combos {
         compatible = "zmk,combos";
