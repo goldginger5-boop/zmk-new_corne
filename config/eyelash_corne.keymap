@@ -17,44 +17,57 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 / {
-
     macros {
         mc_email_00: mc_email_00 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp G &kp O &kp L &kp D &kp G &kp I &kp N &kp G &kp E &kp R &kp N5 &kp LS(NUMBER_2) &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
-//MS             label = "MC_EMAIL_00";
+
+            //MS             label = "MC_EMAIL_00";
+
+            label = "MC_EMAIL_00";
         };
 
         mc_email_01: mc_email_01 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp M &kp A &kp S &kp A &kp Y &kp U &kp K &kp I &kp DOT &kp S &kp H &kp I &kp M &kp I &kp Z &kp U &kp LS(NUMBER_2) &kp R &kp I &kp N &kp G &kp J &kp I &kp N &kp DOT &kp C &kp O &kp M>;
-//MS             label = "MC_EMAIL_01";
+
+            //MS             label = "MC_EMAIL_01";
+
+            label = "MC_EMAIL_01";
         };
 
         mc_parenthesis: mc_parenthesis {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(N9) &kp LS(N0) &kp LEFT>;
-//MS             label = "MC_PARENTHESIS";
+
+            //MS             label = "MC_PARENTHESIS";
+
+            label = "MC_PARENTHESIS";
         };
 
         mc_brace: mc_brace {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(LEFT_BRACKET) &kp LS(RIGHT_BRACKET) &kp LEFT>;
-//MS             label = "MC_BRACE";
+
+            //MS             label = "MC_BRACE";
+
+            label = "MC_BRACE";
         };
 
         mc_bracket: mc_bracket {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET &kp LEFT>;
-//MS             label = "MC_BRACKET";
+
+            //MS             label = "MC_BRACKET";
+
+            label = "MC_BRACKET";
         };
     };
-
 
     combos {
         compatible = "zmk,combos";
@@ -258,7 +271,6 @@
             bindings = <&hold_mo 3>, <&tap_tog 3>;
         };
         */
-
         /*
         hold_mo: hold_mo {
             compatible = "zmk,behavior-hold-tap";
@@ -277,8 +289,6 @@
         };
         */
 
-
-
         tt: tt {
             compatible = "zmk,behavior-hold-tap";
             label = "TT";
@@ -290,6 +300,7 @@
 
         // Physical Key: COMMA
         // Layer 0: Tap for ',' (Shift: '<') / Double tap for '('
+
         td_l0_comma: tap_dance_l0_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -299,43 +310,25 @@
 
         // Physical Key: DOT
         // Layer 0: Tap for '.' (Shift: '>') / Double tap for ')'
-        td_l0_dot: tap_dance_l0_dot {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp DOT>, <&kp RPAR>;
-        };
-
         // Physical Key: COMMA
         // Layer 1: Tap for '[' / Double tap for '{'
-        td_l1_comma: tap_dance_l1_comma {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LBKT>, <&kp LBRC>;
-        };
-
         // Physical Key: DOT
         // Layer 1: Tap for ']' / Double tap for '}'
-        td_l1_dot: tap_dance_l1_dot {
+
+        td_l0_comma: td_l0_comma {
             compatible = "zmk,behavior-tap-dance";
+            label = "TD_L0_COMMA";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp RBKT>, <&kp RBRC>;
+            bindings = <&kp COMMA>, <&kp LEFT_PARENTHESIS>;
         };
 
-        scroll_encoder: scroll_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-            tap-ms = <100>;
+        td_l0_dot: td_l0_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L0_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp RIGHT_PARENTHESIS>;
         };
-
     };
-
-
-
 
     keymap {
         compatible = "zmk,keymap";
@@ -343,9 +336,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&lt 1 TAB              &kp Q               &kp W           &kp E    &kp R         &kp T                             &kp UP                &kp Y       &kp U    &kp I          &kp O        &kp P                    &lt 1 BACKSPACE
-&mt LEFT_CONTROL CAPS  &kp A               &kp S           &kp D    &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J    &kp K          &kp L        &kp SEMI                 &kp SQT
-&kp LEFT_SHIFT         &mt LEFT_CONTROL Z  &mt LEFT_WIN X  &kp C    &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M    &td_l0_comma   &td_l0_dot   &mt RIGHT_CONTROL SLASH  &mt RIGHT_SHIFT MINUS
+&lt 1 TAB              &kp Q               &kp W           &kp E    &kp R         &kp T                             &kp UP                &kp Y       &kp U    &kp I         &kp O       &kp P                    &lt 1 BACKSPACE
+&mt LEFT_CONTROL CAPS  &kp A               &kp S           &kp D    &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J    &kp K         &kp L       &kp SEMI                 &kp SQT
+&kp LEFT_SHIFT         &mt LEFT_CONTROL Z  &mt LEFT_WIN X  &kp C    &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M    &td_l0_comma  &td_l0_dot  &mt RIGHT_CONTROL SLASH  &mt RIGHT_SHIFT MINUS
                                                            &tt 1 1  &kp LEFT_ALT  &kp SPACE                                               &kp RETURN  &tt 2 2  &tt 3 3
             >;
 
@@ -405,10 +398,7 @@
 &none  &none         &none         &none         &none         &none                     &none  &none  &none  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &none
 &none  &out OUT_USB  &out OUT_BLE  &none         &none         &none            &none           &none         &none            &none            &none            &none            &none            &bt BT_CLR_ALL
                                    &none         &none         &none                                          &none            &to 0            &to 0
-/* MS-Battery
-&none         &none         &ind_bat                                       &ind_bat         &to 0            &to 0
-*/
->;
+            >;
 
             label = "DEVICE";
         };
