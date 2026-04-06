@@ -64,11 +64,11 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:backspace-reverse-outline$$', type: held alternate}
   - $$mdi:apple-keyboard-control$$
-  - {t: Sft+-, s: Sft+_}
-  - {t: Sft+=, s: Sft++}
-  - {t: Sft+9, s: Sft+(}
-  - {t: Sft+0, s: Sft+)}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+1
+  - Sft+2
+  - Sft+3
+  - Sft+4
+  - {t: Sft+5, s: Sft+%}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
@@ -76,22 +76,22 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-esc$$
+  - '&td_l1_minus'
+  - '&td_l1_equal'
   - $$mdi:apple-keyboard-shift$$
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft+6
+  - Sft+7
+  - Sft+8
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&td_l1_n'
+  - '&td_l1_m'
   - '&td_l1_comma'
   - '&td_l1_dot'
-  - {t: \, s: '|'}
-  - {t: Sft+\, s: Sft+|}
+  - '&td_l1_backslash'
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: SYMBOOL, h: toggle, type: held alternate}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
@@ -126,7 +126,7 @@ layers:
   - KP 5
   - KP 6
   - KP SLASH
-  - $$mdi:keyboard-esc$$
+  - KP ENTER
   - $$mdi:apple-keyboard-shift$$
   - PG DN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -140,7 +140,7 @@ layers:
   - KP 2
   - KP 3
   - KP EQUAL
-  - KP ENTER
+  - $$mdi:keyboard-esc$$
   - {t: QWERTY, h: toggle}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
@@ -175,7 +175,7 @@ layers:
   - F8
   - F9
   - F10
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,7 +189,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F11
   - F12
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
@@ -224,7 +224,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:pan-left$$
   - '&mkp MB3'
@@ -238,7 +238,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-esc$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
