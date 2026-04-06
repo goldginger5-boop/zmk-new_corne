@@ -300,14 +300,14 @@
 
         // Physical Key: COMMA
         // Layer 0: Tap for ',' (Shift: '<') / Double tap for '('
-
+/*
         td_l0_comma: tap_dance_l0_comma {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp COMMA>, <&kp LPAR>;
         };
-
+*/
         // Physical Key: DOT
         // Layer 0: Tap for '.' (Shift: '>') / Double tap for ')'
         // Physical Key: COMMA
