@@ -193,7 +193,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-*/
+        */
         /*
         TD_L1: TD_L1 {
             compatible = "zmk,behavior-tap-dance";
@@ -218,7 +218,7 @@
             tapping-term-ms = <200>;
             bindings = <&hold_mo 3>, <&tap_tog 3>;
         };
-*/
+        */
         /*
         hold_mo: hold_mo {
             compatible = "zmk,behavior-hold-tap";
@@ -254,6 +254,42 @@
         #binding-cells = <2>;
         tapping-term-ms = <200>;
     };
+
+        // Physical Key: COMMA
+        // Layer 0: Tap for ',' (Shift: '<') / Double tap for '('
+        td_l0_comma: tap_dance_l0_comma {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp COMMA>, <&kp LPAR>;
+        };
+
+        // Physical Key: DOT
+        // Layer 0: Tap for '.' (Shift: '>') / Double tap for ')'
+        td_l0_dot: tap_dance_l0_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp DOT>, <&kp RPAR>;
+        };
+
+        // Physical Key: COMMA
+        // Layer 1: Tap for '[' / Double tap for '{'
+        td_l1_comma: tap_dance_l1_comma {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+        };
+
+        // Physical Key: DOT
+        // Layer 1: Tap for ']' / Double tap for '}'
+        td_l1_dot: tap_dance_l1_dot {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
+        };
 
     /*
     combos {
@@ -309,9 +345,9 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&lt 1 TAB              &kp Q               &kp W           &kp E    &kp R         &kp T                             &kp UP                &kp Y       &kp U    &kp I      &kp O    &kp P                    &lt 1 BACKSPACE
-&mt LEFT_CONTROL CAPS  &kp A               &kp S           &kp D    &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J    &kp K      &kp L    &kp SEMI                 &kp SQT
-&kp LEFT_SHIFT         &mt LEFT_CONTROL Z  &mt LEFT_WIN X  &kp C    &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M    &kp COMMA  &kp DOT  &mt RIGHT_CONTROL SLASH  &mt RIGHT_SHIFT MINUS
+&lt 1 TAB              &kp Q               &kp W           &kp E    &kp R         &kp T                             &kp UP                &kp Y       &kp U    &kp I          &kp O        &kp P                    &lt 1 BACKSPACE
+&mt LEFT_CONTROL CAPS  &kp A               &kp S           &kp D    &kp F         &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J    &kp K          &kp L        &kp SEMI                 &kp SQT
+&kp LEFT_SHIFT         &mt LEFT_CONTROL Z  &mt LEFT_WIN X  &kp C    &kp V         &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M    &td_l0_comma   &td_l0_dot   &mt RIGHT_CONTROL SLASH  &mt RIGHT_SHIFT MINUS
                                                            &tt 1 1  &kp LEFT_ALT  &kp SPACE                                               &kp RETURN  &tt 2 2  &tt 3 3
             >;
 
@@ -321,9 +357,9 @@
         symbol_layer {
             display-name = "SYMBOOL";
             bindings = <
-&kp ESCAPE        &kp N1         &kp N2         &kp N3      &kp N4      &kp N5                                       &mmv MOVE_UP                     &kp N6            &kp N7             &kp N8                &kp N9                 &kp N0         &kp DELETE
-&kp LEFT_CONTROL  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(N9)  &kp LS(N0)  &none                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT          &kp DOWN           &kp UP                &kp RIGHT              &kp ENTER      &kp ESCAPE
-&kp LSHIFT        &kp MINUS      &kp EQUAL      &none       &kp DELETE  &kp BACKSPACE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)  &kp BACKSLASH  &kp LS(BACKSLASH)
+&kp ESCAPE        &kp N1         &kp N2         &kp N3      &kp N4      &kp N5                                       &mmv MOVE_UP                     &kp N6            &kp N7             &kp N8        &kp N9      &kp N0         &kp DELETE
+&kp LEFT_CONTROL  &kp LS(MINUS)  &kp LS(EQUAL)  &kp LS(N9)  &kp LS(N0)  &none                        &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT          &kp DOWN           &kp UP        &kp RIGHT   &kp ENTER      &kp ESCAPE
+&kp LSHIFT        &kp MINUS      &kp EQUAL      &none       &kp DELETE  &kp BACKSPACE  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &td_l1_comma  &td_l1_dot  &kp BACKSLASH  &kp LS(BACKSLASH)
                                                 &tog 1      &kp LALT    &kp SPACE                                                                     &kp ENTER         &to 4              &to 0
             >;
 
