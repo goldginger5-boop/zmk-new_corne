@@ -141,37 +141,37 @@
         };
 
         Email_00 {
-            bindings = <mc_email_00>;
+            bindings = <&email_00>;
             key-positions = <4 8>;
         };
 
         Email_01 {
-            bindings = <mc_email_01>;
+            bindings = <&email_01>;
             key-positions = <3 9>;
         };
 
         Parenthesis {
-            bindings = <mc_parenthesis>;
+            bindings = <&parenthesis>;
             key-positions = <17 23>;
         };
 
         Brace {
-            bindings = <mc_brace>;
+            bindings = <&brace>;
             key-positions = <16 24>;
         };
 
         Bracket_sub2 {
-            bindings = <mc_bracket>;
+            bindings = <&bracket>;
             key-positions = <14 26>;
         };
 
         Bracket_sub1 {
-            bindings = <mc_bracket>;
+            bindings = <&bracket>;
             key-positions = <15 25>;
         };
 
         Bracket {
-            bindings = <mc_bracket>;
+            bindings = <&bracket>;
             key-positions = <17 16 23 24>;
         };
 
