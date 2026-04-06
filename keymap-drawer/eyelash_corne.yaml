@@ -344,16 +344,16 @@ combos:
 - p: [12, 41, 0, 28]
   k: '&soft_off'
 - p: [4, 8]
-  k: '&mc_email_00'
+  k: '&email_00'
 - p: [3, 9]
-  k: '&mc_email_01'
+  k: '&email_01'
 - p: [17, 23]
-  k: '&mc_parenthesis'
+  k: '&parenthesis'
 - p: [16, 24]
-  k: '&mc_brace'
+  k: '&brace'
 - p: [14, 26]
-  k: '&mc_bracket'
+  k: '&bracket'
 - p: [15, 25]
-  k: '&mc_bracket'
+  k: '&bracket'
 - p: [17, 16, 23, 24]
-  k: '&mc_bracket'
+  k: '&bracket'
