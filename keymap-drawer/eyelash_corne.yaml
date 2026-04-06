@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '&td_l0_comma'
+  - '&td_l0_dot'
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: SYMBOOL, h: SYMBOOL}
@@ -88,8 +88,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: 'Sft+[', s: 'Sft+{'}
-  - {t: 'Sft+]', s: 'Sft+}'}
+  - '&td_l1_comma'
+  - '&td_l1_dot'
   - {t: \, s: '|'}
   - {t: Sft+\, s: Sft+|}
   - {t: SYMBOOL, h: toggle, type: held alternate}
