@@ -328,6 +328,20 @@
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp RIGHT_PARENTHESIS>;
         };
+
+        td_l1_comma: td_l1_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L1_COMMA";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET>, <&kp LEFT_BRACE>;
+        };
+
+        td_l1_dot: td_l1_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_L1_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp RIGHT_BRACE>;
+        };
     };
 
     keymap {
