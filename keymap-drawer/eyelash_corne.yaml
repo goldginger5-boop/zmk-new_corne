@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '&td_l0_comma'
+  - '&td_l0_dot'
   - {t: /, h: '$$mdi:apple-keyboard-control$$', s: '?'}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: SYMBOOL, h: SYMBOOL}
@@ -88,8 +88,8 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: 'Sft+[', s: 'Sft+{'}
-  - {t: 'Sft+]', s: 'Sft+}'}
+  - '&td_l1_comma'
+  - '&td_l1_dot'
   - {t: \, s: '|'}
   - {t: Sft+\, s: Sft+|}
   - {t: SYMBOOL, h: toggle, type: held alternate}
@@ -344,16 +344,16 @@ combos:
 - p: [12, 41, 0, 28]
   k: '&soft_off'
 - p: [4, 8]
-  k: '&email_00'
+  k: '&mc_email_00'
 - p: [3, 9]
-  k: '&email_01'
+  k: '&mc_email_01'
 - p: [17, 23]
-  k: '&parenthesis'
+  k: '&mc_parenthesis'
 - p: [16, 24]
-  k: '&brace'
+  k: '&mc_brace'
 - p: [14, 26]
-  k: '&bracket'
+  k: '&mc_bracket'
 - p: [15, 25]
-  k: '&bracket'
+  k: '&mc_bracket'
 - p: [17, 16, 23, 24]
-  k: '&bracket'
+  k: '&mc_bracket'
